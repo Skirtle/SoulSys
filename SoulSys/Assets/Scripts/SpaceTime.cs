@@ -31,8 +31,8 @@ public class SpaceTime : MonoBehaviour {
 
         foreach (GameObject currentBody in allBodies) {
             if (currentBody.GetComponent<Body>().isStatic) {
-                currentBody.transform.position = currentBody.GetComponent<Body>().startingPosition;
-                //continue;
+                //currentBody.transform.position = currentBody.GetComponent<Body>().startingPosition;
+                continue;
             }
             float m1 = currentBody.GetComponent<Body>().mass;
 
